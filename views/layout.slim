@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title jonjonholic me
+    meta name="keywords" content="jonjonholic"
+    meta name="author" content="jonjonholic"
+    meta name="description" content="jonjonholic"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel"icon" type="image/ico" href="favicon.ico"
+    == css :cssapp
+    header
+      nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+        div class="container"
+          div class="nav-header"
+            div class="navbar-collapse collapse"
+              button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
+                span class="sr-only"
+                span class="icon-bar"
+                span class="icon-bar"
+                span class="icon-bar"
+              a class="navbar-brand" href="/" jonjonholic
+              ul class="nav navbar-nav navbar-right"
+                li
+                  a href="/" home
+                li
+                  a href="/coders" coders
+                li
+                  a href="/contact" contact
+    body
+      div class="main"
+        == yield
+        ==js :jsapp
+
+    footer
